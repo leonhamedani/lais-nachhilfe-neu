@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lais — Nachhilfe in Mathe, Physik und Naturwissenschaften</title>
+  <meta name="description" content="Online-Nachhilfe in Mathe, Physik und Naturwissenschaften, bundesweit, von Klasse 5 bis Uni. Ein Mensch statt ein Institut. Die erste Stunde zahlst du nur, wenn sie überzeugt.">
+  <link rel="canonical" href="https://lais-nachhilfe.pages.dev/">
+  <link rel="icon" href="img/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lais — Nachhilfe in Mathe, Physik und Naturwissenschaften">
+  <meta property="og:description" content="Online-Nachhilfe in Mathe, Physik und Naturwissenschaften, bundesweit, von Klasse 5 bis Uni. Ein Mensch statt ein Institut.">
+  <meta property="og:url" content="https://lais-nachhilfe.pages.dev/">
+  <meta property="og:image" content="https://lais-nachhilfe.pages.dev/media/hero-poster.jpg">
+  <meta property="og:locale" content="de_DE">
+  <meta name="theme-color" content="#14453D">
+  <link rel="preload" as="image" href="media/hero-poster.jpg" fetchpriority="high">
+  <link rel="preload" href="fonts/fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Lais",
+      "url": "https://lais-nachhilfe.pages.dev/",
+      "description": "Online-Nachhilfe in Mathe, Physik und Naturwissenschaften, bundesweit, von Klasse 5 bis Uni.",
+      "email": "laisnadjem@gmail.com",
+      "telephone": "+4915756829088",
+      "areaServed": "DE"
+    }
+  </script>
+</head>
+<body>
+  <a class="sprunglink" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="nav" data-nav>
+    <div class="nav__leiste">
+      <a class="marke" href="#oben">
+        <img class="logo" src="img/logo-farbe.png" alt="" width="1022" height="1207">
+        <span>
+          <span class="wortmarke">Lais</span>
+          <span class="marke__zusatz">Nachhilfe</span>
+        </span>
+      </a>
+      <button class="nav__schalt" type="button" data-nav-schalt aria-expanded="false" aria-controls="navigation" aria-label="Menü öffnen">
+        <span class="nav__balken"></span>
+      </button>
+      <nav id="navigation" class="nav__liste" data-nav-panel aria-label="Seite">
+        <a href="#angebot">Angebot</a>
+        <a href="#preise">Preise</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#ueber">Über mich</a>
+        <a href="#stimmen">Stimmen</a>
+        <a href="#kontakt">Kontakt</a>
+        <a class="knopf nav__cta" href="https://calendly.com/laisnadjem/30min" rel="noopener">Probestunde buchen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+    <section class="hero" id="oben" aria-labelledby="hero-titel">
+      <video class="hero__video" data-rolle="hero" muted loop playsinline preload="metadata"
+        poster="media/hero-poster.jpg" width="1920" height="1080" aria-hidden="true">
+        <source media="(min-width: 1281px)" src="media/hero-1920.webm" type="video/webm">
+        <source media="(min-width: 1281px)" src="media/hero-1920.mp4" type="video/mp4">
+        <source media="(min-width: 721px)" src="media/hero-1280.mp4" type="video/mp4">
+        <source src="media/hero-720.webm" type="video/webm">
+        <source src="media/hero-720.mp4" type="video/mp4">
+      </video>
+      <canvas class="hero__feld" data-rolle="formeln" aria-hidden="true"></canvas>
+      <div class="hero__scrim" aria-hidden="true"></div>
+      <div class="hero__inhalt">
+        <p class="kicker">Mathe · Physik · Naturwissenschaften</p>
+        <h1 id="hero-titel" class="hero__titel">Mathe sitzt&nbsp;<span class="hero__strich">–</span> dann sitzt auch der Rest</h1>
+        <p class="hero__text">Mathe, Physik und Naturwissenschaften, online in ganz Deutschland. Die erste Stunde zahlst du nur, wenn sie überzeugt.</p>
+        <div class="knopfzeile">
+          <a class="knopf" href="https://calendly.com/laisnadjem/30min" rel="noopener">Probestunde buchen</a>
+          <a class="knopf knopf--zweit" href="https://wa.me/4915756829088?text=Hallo%20Lais%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Probestunde." rel="noopener">WhatsApp</a>
+          <a class="knopf knopf--zweit" href="tel:+4915756829088">Anrufen</a>
+        </div>
+        <ul class="hero__fakten">
+          <li>Online in ganz Deutschland</li>
+          <li>Klasse 5 bis zur Uni</li>
+          <li>Erste Stunde nur, wenn sie überzeugt</li>
+        </ul>
+      </div>
+      <button class="hero__pause" type="button" data-rolle="video-pause" aria-pressed="true" aria-label="Hintergrundvideo abspielen">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path class="symbol-pause" d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" />
+          <path class="symbol-play" d="M8 5v14l11-7z" />
+        </svg>
+      </button>
+    </section>
+
+    <section class="angebot" id="angebot" aria-labelledby="angebot-titel">
+      <div class="rahmen">
+        <div class="kopf">
+          <p class="kopf__index">01</p>
+          <h2 id="angebot-titel">Angebot</h2>
+          <p>Ich unterrichte Mathe, Physik und Naturwissenschaften — von Klasse 5 bis zur Uni, online und bundesweit.</p>
+        </div>
+
+        <ul class="faecher">
+          <li data-reveal>
+            <svg class="mini" viewBox="0 0 64 64" aria-hidden="true">
+              <path class="draw" pathLength="1" d="M10 52 H54 M14 56 V12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              <path class="draw" pathLength="1" d="M16 44 C24 44 28 22 36 22 C44 22 48 36 54 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              <path class="gold" d="M16 52 C24 52 28 30 36 30 L36 52 Z"/>
+            </svg>
+            <div>
+              <strong>Mathe</strong>
+            </div>
+          </li>
+          <li data-reveal>
+            <svg class="mini" viewBox="0 0 64 64" aria-hidden="true">
+              <path class="draw" pathLength="1" d="M6 32 H58" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path class="draw" pathLength="1" d="M8 32 C14 18 20 18 26 32 C32 46 38 46 44 32 C50 18 56 18 58 28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              <circle class="gold" cx="26" cy="32" r="3.2"/>
+            </svg>
+            <div>
+              <strong>Physik</strong>
+            </div>
+          </li>
+          <li data-reveal>
+            <svg class="mini" viewBox="0 0 64 64" aria-hidden="true">
+              <ellipse class="draw" pathLength="1" cx="32" cy="32" rx="20" ry="8" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <ellipse class="draw" pathLength="1" cx="32" cy="32" rx="8" ry="20" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <ellipse class="draw" pathLength="1" cx="32" cy="32" rx="18" ry="14" transform="rotate(40 32 32)" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <circle class="gold" cx="32" cy="32" r="3.4"/>
+            </svg>
+            <div>
+              <strong>Naturwissenschaften</strong>
+            </div>
+          </li>
+        </ul>
+
+        <div class="karten">
+          <article class="karte" data-neigen data-reveal>
+            <div class="karte__bild" aria-hidden="true">
+              <svg class="illu" viewBox="0 0 320 180">
+                <path class="haar" d="M36 156 H286 M48 168 V24" />
+                <path class="haar" d="M278 156 l12 0 M290 156 l-7 -5 M290 156 l-7 5 M48 32 l-5 7 M48 32 l5 7" />
+                <path class="gold" d="M58 156 C92 156 112 112 132 96 L132 156 Z" />
+                <path class="draw" pathLength="1" d="M58 138 C92 132 112 104 132 88" />
+                <path class="draw" pathLength="1" d="M176 74 C210 52 246 78 286 42" />
+                <path class="draw" pathLength="1" d="M138 96 L170 68" />
+                <circle class="gold" cx="154" cy="82" r="5" />
+                <path class="haar" d="M48 156 v-8 M78 156 v-6 M108 156 v-8 M138 156 v-6 M168 156 v-8 M198 156 v-6 M228 156 v-8 M258 156 v-6" />
+              </svg>
+            </div>
+            <div class="karte__körper">
+              <p class="karte__index">Einzelunterricht</p>
+              <h3>Dieselbe Person, jede Woche</h3>
+              <p>45 Minuten, wöchentlich, immer dieselbe Person. Wir suchen zuerst die Lücke und nicht die Hausaufgabe.</p>
+            </div>
+            <p class="preiszeile">
+              <span>Klasse 5 bis 10 · 20&nbsp;€</span>
+              <span>Oberstufe und Abitur · 24&nbsp;€</span>
+              <span>Ausbildung, Uni-Mathematik und Grundlagenphysik · 29&nbsp;€</span>
+            </p>
+          </article>
+
+          <article class="karte karte--dunkel" data-neigen data-reveal>
+            <div class="karte__bild" aria-hidden="true">
+              <svg class="illu" viewBox="0 0 320 180">
+                <path class="draw" pathLength="1" d="M46 112 C78 70 108 58 132 86 C156 114 186 122 214 90 C236 66 260 70 286 96" />
+                <circle class="draw" pathLength="1" cx="62" cy="118" r="16" />
+                <circle class="gold" cx="124" cy="78" r="16" />
+                <circle class="gold" cx="176" cy="112" r="16" />
+                <circle class="gold" cx="230" cy="74" r="16" />
+                <circle class="draw" pathLength="1" cx="278" cy="108" r="16" />
+              </svg>
+            </div>
+            <div class="karte__körper">
+              <p class="karte__index">Gruppenkurs</p>
+              <h3>Gemeinsam am selben Thema</h3>
+              <p>90 Minuten mit drei bis fünf Schülern derselben Klassenstufe zum selben Thema. Ein Kurs startet, sobald sich drei Teilnehmer für ein Thema gefunden haben. Für alle, die lieber gemeinsam arbeiten — und für alle, denen Einzelunterricht zu teuer ist.</p>
+            </div>
+            <p class="preiszeile">
+              <span>15&nbsp;€ je Termin und Teilnehmer</span>
+            </p>
+          </article>
+
+          <article class="karte" data-neigen data-reveal>
+            <div class="karte__bild" aria-hidden="true">
+              <svg class="illu" viewBox="0 0 320 180">
+                <path class="haar" d="M28 146 H292" />
+                <path class="draw" pathLength="1" d="M40 132 C70 128 78 92 104 90 C132 88 136 70 164 64 C196 56 206 40 250 28" />
+                <path class="gold" d="M248 18 l16 8 l-14 10 Z" />
+                <path class="draw" pathLength="1" d="M52 146 V112" />
+                <path class="draw" pathLength="1" d="M104 146 V96" />
+                <path class="draw" pathLength="1" d="M156 146 V78" />
+                <path class="draw" pathLength="1" d="M208 146 V62" />
+                <path class="draw" pathLength="1" d="M260 146 V40" />
+                <circle class="gold" cx="52" cy="112" r="4" />
+                <circle class="gold" cx="104" cy="96" r="4" />
+                <circle class="gold" cx="156" cy="78" r="4" />
+                <circle class="gold" cx="208" cy="62" r="4" />
+                <circle class="gold" cx="260" cy="40" r="4" />
+              </svg>
+            </div>
+            <div class="karte__körper">
+              <p class="karte__index">Crashkurs vor der Prüfung</p>
+              <h3>Fünf Termine vor dem Abschluss</h3>
+              <p>Fünf Termine à 90 Minuten für die Wochen vor dem Abitur oder einer Abschlussprüfung, wenn es auf wenige Themen ankommt.</p>
+            </div>
+            <p class="preiszeile">
+              <span>In kleiner Gruppe · 129&nbsp;€ pro Person</span>
+              <span>Allein mit mir · 239&nbsp;€</span>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="preise abschnitt--wald" id="preise" aria-labelledby="preise-titel">
+      <div class="rahmen">
+        <div class="kopf">
+          <p class="kopf__index">02</p>
+          <h2 id="preise-titel">Preise</h2>
+          <p class="leit">Alle Beträge aus dem Angebot, nebeneinander.</p>
+        </div>
+        <div class="preistafel">
+          <article class="preisblock" data-reveal>
+            <h3>Einzelunterricht</h3>
+            <p>45 Minuten, wöchentlich, immer dieselbe Person.</p>
+            <ul>
+              <li><span>Klasse 5 bis 10</span><strong>20&nbsp;€</strong></li>
+              <li><span>Oberstufe und Abitur</span><strong>24&nbsp;€</strong></li>
+              <li><span>Ausbildung, Uni-Mathematik und Grundlagenphysik</span><strong>29&nbsp;€</strong></li>
+            </ul>
+          </article>
+          <article class="preisblock" data-reveal>
+            <h3>Gruppenkurs</h3>
+            <p>90 Minuten, drei bis fünf Schüler derselben Klassenstufe zum selben Thema. Start, sobald sich drei Teilnehmer für ein Thema gefunden haben.</p>
+            <p class="preis-gross"><strong>15</strong><span>€ je Termin und Teilnehmer</span></p>
+          </article>
+          <article class="preisblock" data-reveal>
+            <h3>Crashkurs</h3>
+            <p>Fünf Termine à 90 Minuten vor dem Abitur oder einer Abschlussprüfung.</p>
+            <ul>
+              <li><span>In kleiner Gruppe, pro Person</span><strong>129&nbsp;€</strong></li>
+              <li><span>Allein mit mir</span><strong>239&nbsp;€</strong></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ablauf abschnitt--gruen" id="ablauf" aria-labelledby="ablauf-titel">
+      <div class="rahmen">
+        <div class="kopf">
+          <p class="kopf__index">03</p>
+          <h2 id="ablauf-titel">So läuft es ab</h2>
+          <p>Such dir direkt einen Termin aus oder schreib mir kurz, in welchem Fach und welcher Klasse es hakt.</p>
+        </div>
+        <ol class="schritte">
+          <li class="schritt" data-reveal>
+            <span class="schritt__nr">1</span>
+            <svg class="mini" viewBox="0 0 64 64" aria-hidden="true">
+              <rect class="draw" x="10" y="16" width="44" height="34" rx="4" pathLength="1" fill="none" stroke="currentColor" stroke-width="1.7"/>
+              <path class="draw" pathLength="1" d="M10 26 H54 M22 12 V20 M42 12 V20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              <circle class="gold" cx="24" cy="36" r="3"/>
+              <circle class="gold" cx="34" cy="36" r="3"/>
+              <circle class="gold" cx="44" cy="36" r="3"/>
+            </svg>
+            <h3>Termin oder Nachricht</h3>
+            <p>Schreib kurz, in welchem Fach und welcher Klasse es hakt — oder such dir direkt einen Termin aus.</p>
+          </li>
+          <li class="schritt" data-reveal>
+            <span class="schritt__nr">2</span>
+            <svg class="mini" viewBox="0 0 64 64" aria-hidden="true">
+              <circle class="draw" cx="32" cy="32" r="18" pathLength="1" fill="none" stroke="currentColor" stroke-width="1.7"/>
+              <path class="draw" pathLength="1" d="M32 20 V33 L42 38" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              <circle class="gold" cx="32" cy="32" r="3"/>
+            </svg>
+            <h3>Probestunde</h3>
+            <p>Wir machen eine Probestunde, und die zahlst du nur, wenn sie dich überzeugt.</p>
+          </li>
+          <li class="schritt" data-reveal>
+            <span class="schritt__nr">3</span>
+            <svg class="mini" viewBox="0 0 64 64" aria-hidden="true">
+              <path class="draw" pathLength="1" d="M8 50 H56 M12 54 V14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path class="draw" pathLength="1" d="M16 42 C26 40 30 28 36 26" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              <path class="draw" pathLength="1" d="M44 22 C50 18 56 24 56 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              <circle class="gold" cx="40" cy="24" r="3.2"/>
+            </svg>
+            <h3>Zuerst die Lücke</h3>
+            <p>Du bekommst immer dieselbe Person. Ich behandle nicht nur den Stoff der nächsten Arbeit, sondern vor allem die Lücke darunter — meistens sitzt sie in Klasse 6 oder 7, oft bei den Brüchen.</p>
+          </li>
+          <li class="schritt" data-reveal>
+            <span class="schritt__nr">4</span>
+            <svg class="mini" viewBox="0 0 64 64" aria-hidden="true">
+              <path class="draw" pathLength="1" d="M10 40 H34" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              <path class="draw" pathLength="1" d="M34 40 C44 40 46 22 58 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              <path class="gold" d="M52 14 l10 2 l-6 8 Z"/>
+            </svg>
+            <h3>Irgendwann ohne mich</h3>
+            <p>Mein Ziel ist, dass du mich irgendwann nicht mehr brauchst.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="ueber" id="ueber" aria-labelledby="ueber-titel">
+      <div class="rahmen">
+        <div class="kopf">
+          <p class="kopf__index">04</p>
+          <h2 id="ueber-titel">Über mich</h2>
+        </div>
+        <div class="ueber__layout">
+          <div class="ueber__tafel" data-reveal>
+            <p class="ueber__leitsatz">Mathematik ist eine Sprache für Struktur und Logik, keine Zahlenrechnerei. Ich bringe sie jungen Menschen bei, bis sie Probleme allein knacken — und sich selbst verstehen.</p>
+            <svg class="ueber__ornament" data-parallax="30" viewBox="0 0 260 180" aria-hidden="true">
+              <path d="M20 150 H230 M30 164 V20" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M36 140 C70 136 96 90 120 78 C150 62 190 70 230 36" fill="none" stroke="currentColor" stroke-width="3"/>
+              <path d="M36 150 C70 150 96 108 120 96 L120 150 Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="ueber__texte" data-reveal>
+            <p class="ueber__text">Ich heiße Lais und gebe seit über zehn Jahren Nachhilfe. Mathematik und Physik waren meine Leistungskurse, mein Abitur habe ich mit 1,8 gemacht, danach habe ich Physik an der RWTH Aachen studiert. Am Fraunhofer-Institut für Lasertechnik habe ich Schulungsunterlagen erstellt — Erklären ist das, was ich beruflich tue.</p>
+            <p class="ueber__text">Was mich von einem Institut unterscheidet: Du bekommst immer dieselbe Person. Und ich behandle nicht nur den Stoff der nächsten Arbeit, sondern vor allem die Lücke darunter — meistens sitzt sie in Klasse 6 oder 7, oft bei den Brüchen. Mein Ziel ist, dass du mich irgendwann nicht mehr brauchst.</p>
+          </div>
+        </div>
+        <ul class="fakten" aria-label="Aus dem Werdegang">
+          <li data-reveal>
+            <span class="fakten__zahl">über <span data-zaehler="10">10</span></span>
+            <span>Jahre Nachhilfe</span>
+          </li>
+          <li data-reveal>
+            <span class="fakten__zahl">Mathe &amp; Physik</span>
+            <span>Leistungskurse</span>
+          </li>
+          <li data-reveal>
+            <span class="fakten__zahl">1,8</span>
+            <span>Abitur</span>
+          </li>
+          <li data-reveal>
+            <span class="fakten__zahl">RWTH</span>
+            <span>Physikstudium in Aachen</span>
+          </li>
+          <li data-reveal>
+            <span class="fakten__zahl">Fraunhofer</span>
+            <span>Schulungsunterlagen, Institut für Lasertechnik</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Stimmen: echte, freigegebene Kundenstimmen.
+         Zitat wörtlich. Veröffentlichung nur mit Zustimmung.
+         Quelle: Vorname und Rolle, kein Nachname des Kindes. -->
+    <section class="stimmen abschnitt--sand" id="stimmen" aria-labelledby="stimmen-titel">
+      <div class="rahmen">
+        <div class="kopf">
+          <p class="kopf__index">05</p>
+          <h2 id="stimmen-titel">Was Eltern sagen</h2>
+        </div>
+        <ul class="stimmen__liste">
+          <li class="stimme" data-reveal>
+            <figure>
+              <blockquote>Dalya und Nisa sind jetzt schon seit 23 Terminen bei dir und wir sind wirklich unglaublich zufrieden. Sie haben sich in Mathe deutlich verbessert, schreiben viel bessere Noten und haben vor allem wieder richtig Selbstvertrauen bekommen. Man merkt einfach, dass du nicht nur Nachhilfe gibst, sondern wirklich für die Kinder da bist – mittlerweile bist du für sie fast wie ein großer Bruder. Wir sind wirklich froh, dich gefunden zu haben und können dich von Herzen weiterempfehlen.</blockquote>
+              <figcaption>Yasemin, Mutter von Dalya und Nisa</figcaption>
+            </figure>
+          </li>
+          <li class="stimme" data-reveal>
+            <figure>
+              <blockquote>Seit wir die Nachhilfe bei Lais gestartet haben, hat sich die Gesamtnote klar verbessert. Grundwissen wurde gefestigt und das Selbstvertrauen in das mathematische Verständnis wurde wiederhergestellt. Wir sind sehr zufrieden.</blockquote>
+              <figcaption>Peter, Vater von Ruy</figcaption>
+            </figure>
+          </li>
+          <li class="stimme" data-reveal>
+            <figure>
+              <blockquote>Lais arbeitet seit einem halben Jahr mit meinem Sohn. Die Noten meines Sohnes haben sich deutlich verbessert. Nicht nur in Mathematik, Lais hat meinem Sohn auch grundsätzlich ein Verständnis für das Lernen vermittelt. Wir sind sehr zufrieden und können Lais uneingeschränkt weiterempfehlen.</blockquote>
+              <figcaption>Gunnar, Vater von Lauritz</figcaption>
+            </figure>
+          </li>
+          <li class="stimme" data-reveal>
+            <figure>
+              <blockquote>Die Nachhilfe haben wir begonnen, da Lennarts Noten in Mathe immer schlechter wurden und wir Sorge hatten, dass er den MSA-Abschluss in der 10. Klasse nicht schafft. Die Nachhilfe war in der 10. Klasse eine gute Vorbereitung auf den MSA-Abschluss, den Lennart mit gutem Ergebnis geschafft hat. Ansonsten macht ihm Mathe jetzt wieder mehr Spaß und er hat ein paar Strategien gelernt, mit denen er besser Matheaufgaben lösen kann.</blockquote>
+              <figcaption>Thomas, Vater von Lennart</figcaption>
+            </figure>
+          </li>
+        </ul>
+        <p class="stimmen__quelle">Alle Stimmen stammen von Kundinnen und Kunden, die der Veröffentlichung zugestimmt haben.</p>
+      </div>
+    </section>
+
+    <section class="fragen" id="fragen" aria-labelledby="fragen-titel">
+      <div class="rahmen">
+        <div class="kopf">
+          <p class="kopf__index">06</p>
+          <h2 id="fragen-titel">Fragen und Antworten</h2>
+          <p>Dieselben Angaben wie im Angebot, zum Nachschlagen.</p>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Welche Fächer, und von welcher Klasse an?</summary>
+            <p>Ich unterrichte Mathe, Physik und Naturwissenschaften — von Klasse 5 bis zur Uni, online und bundesweit.</p>
+          </details>
+          <details>
+            <summary>Wo findet der Unterricht statt?</summary>
+            <p>Unterricht findet online statt, in ganz Deutschland.</p>
+          </details>
+          <details>
+            <summary>Was kostet der Einzelunterricht?</summary>
+            <p>45 Minuten, wöchentlich, immer dieselbe Person. Klasse 5 bis 10: 20&nbsp;€. Oberstufe und Abitur: 24&nbsp;€. Ausbildung, Uni-Mathematik und Grundlagenphysik: 29&nbsp;€.</p>
+          </details>
+          <details>
+            <summary>Wie funktioniert der Gruppenkurs?</summary>
+            <p>90 Minuten mit drei bis fünf Schülern derselben Klassenstufe zum selben Thema, 15&nbsp;€ je Termin und Teilnehmer. Ein Kurs startet, sobald sich drei Teilnehmer für ein Thema gefunden haben. Für alle, die lieber gemeinsam arbeiten — und für alle, denen Einzelunterricht zu teuer ist.</p>
+          </details>
+          <details>
+            <summary>Was umfasst der Crashkurs vor der Prüfung?</summary>
+            <p>Fünf Termine à 90 Minuten für die Wochen vor dem Abitur oder einer Abschlussprüfung, wenn es auf wenige Themen ankommt. In kleiner Gruppe 129&nbsp;€ pro Person, allein mit mir 239&nbsp;€.</p>
+          </details>
+          <details>
+            <summary>Muss ich die Probestunde bezahlen?</summary>
+            <p>Wir machen eine Probestunde, und die zahlst du nur, wenn sie dich überzeugt. Die erste Stunde zahlst du nur, wenn sie überzeugt.</p>
+          </details>
+          <details>
+            <summary>Was unterscheidet das von einem Institut?</summary>
+            <p>Du bekommst immer dieselbe Person. Ich behandle nicht nur den Stoff der nächsten Arbeit, sondern vor allem die Lücke darunter — meistens sitzt sie in Klasse 6 oder 7, oft bei den Brüchen. Mein Ziel ist, dass du mich irgendwann nicht mehr brauchst.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="kontakt abschnitt--tief" id="kontakt" aria-labelledby="kontakt-titel">
+      <div class="rahmen kontakt__layout">
+        <div>
+          <p class="kopf__index">07</p>
+          <h2 id="kontakt-titel">Kontakt</h2>
+          <p class="leit">Such dir direkt einen Termin aus oder schreib mir kurz, in welchem Fach und welcher Klasse es hakt. Wir machen eine Probestunde, und die zahlst du nur, wenn sie dich überzeugt.</p>
+          <div class="knopfzeile">
+            <a class="knopf" href="https://calendly.com/laisnadjem/30min" rel="noopener">Probestunde buchen</a>
+            <a class="knopf knopf--zweit" href="https://wa.me/4915756829088?text=Hallo%20Lais%2C%20ich%20interessiere%20mich%20f%C3%BCr%20eine%20Probestunde." rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+        <div class="kontakt__wege">
+          <a class="weg" href="mailto:laisnadjem@gmail.com">
+            <strong>E-Mail</strong>
+            <span>laisnadjem@gmail.com</span>
+          </a>
+          <a class="weg" href="tel:+4915756829088">
+            <strong>Telefon</strong>
+            <span>+49&nbsp;157&nbsp;56829088</span>
+          </a>
+          <a class="weg" href="https://wa.me/4915756829088" rel="noopener">
+            <strong>WhatsApp</strong>
+            <span>+49&nbsp;157&nbsp;56829088</span>
+          </a>
+          <p class="weg">
+            <strong>Ort</strong>
+            <span>Unterricht findet online statt, in ganz Deutschland.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="fuss">
+    <div class="fuss__innen">
+      <div class="fuss__marke">
+        <img class="logo" src="img/logo-farbe.png" alt="" width="1022" height="1207">
+        <p><strong>Lais</strong><br>Nachhilfe in Mathe, Physik und Naturwissenschaften. Online, in ganz Deutschland.</p>
+      </div>
+      <nav class="fuss__links" aria-label="Rechtliches">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="mailto:laisnadjem@gmail.com">laisnadjem@gmail.com</a>
+        <a href="tel:+4915756829088">+49&nbsp;157&nbsp;56829088</a>
+      </nav>
+      <div class="fuss__meta">
+        <p>© Lais</p>
+        <p>Lais Abbas Nadjem, Brucknerstraße 34, 50127 Bergheim</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/gsap.min.js" defer></script>
+  <script src="vendor/ScrollTrigger.min.js" defer></script>
+  <script src="vendor/lenis.min.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>
